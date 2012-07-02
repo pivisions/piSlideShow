@@ -89,4 +89,7 @@ piSlideShow has following options.
 * `anchors` : **optional** - `true` or `false`. Defines if anchor balls to be shown or not. Default is `true`  
                            - Eg.: 'anchors' : false
 
+
 See demo folder for a sample.
+
+Check the Demo here : http://pivisions.net/scripts/piSlideshow/demo/demo1.html
