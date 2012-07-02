@@ -1,0 +1,14 @@
+/* CSS Document */
+
+#pislideshow { position:relative; width:1000px; height:450px; overflow:hidden;}
+#pislideshow li { display:none; }
+#pislideshow .main_img { position:absolute; z-index:0;   }
+.loader { background:#fff url(../images/loader.gif) no-repeat 50% 50% ; }
+
+.balls { top:410px; left:48px; position:absolute;  }
+.balls div{ width:12px; height:12px; overflow:hidden; float:left; margin-right:5px;  cursor:pointer; position:relative;   }
+.balls div img { position:absolute; }
+
+
+
+

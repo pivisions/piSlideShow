@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>piSlideShow - Demo 1</title>
+<link href="../lib/css/piSlideshow.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../lib/js/piSlideshow.js"></script>
+<script type="text/javascript" src="../lib/js/jquery.preloadimages.min.js"></script>
+<script>
+jQuery(document).ready(function(){
+
+	var options = {
+			'slideDirection' : ['right', 'bottom', 'left', 'top'],
+			'slideTo' : [-200, 0, -70, -50],
+			'imagesUrl' : '../lib/images/'
+	}
+	
+	$('#pislideshow').pislideshow(options);
+
+});
+</script>
+</head>
+<style>
+body { font:12px/1.5 "Lucida Sans Unicode", "Lucida Grande", sans-serif; color:#888; background:url(images/bg.jpg) repeat; width:100%; margin:30px 0 0 0 ; }
+ol, ol li,ul, ul li  { list-style:none;  margin:0; padding:0; }
+div, p, img { padding:0; margin:0; }
+a { color:#F00; }
+.header { width:1000px;  margin:0 auto; margin:20px auto; }
+.footer { width:1000px; height:100px; margin:0 auto; margin-top:30px; }
+h1 { font-size:22px; line-height:0em;  color:#000; text-shadow:1px 1px 1px #fff; }
+.slideshow h2 { font-size:28px; line-height:1.25em; color:#000;}
+.slideshow { background-color:#fff; border-radius:4px; box-shadow:0px 1px 4px rgba(0,0,0,0.2); margin:0 auto; }
+.slideshow .desc { position:absolute; width:325px; height:300px;  margin:55px 0 0 48px; font-size:15px; line-height:20px; color:#a2a2a7;  }
+.slideshow .desc p { display:none; }
+.slideshow .desc img { position:relative; z-index:10; margin-bottom:18px; } 
+.slideshow .desc .btn { margin-top:26px; }
+
+.slideshow .slide2 .desc{   left:180px; }
+.slideshow .slide2 .main_img { left:120px; }
+.slideshow .slide2 .desc { width:550px; text-align:center; }
+
+.slideshow .slide3 .main_img, .slideshow .slide3 .desc{   left:450px; }
+.slideshow .slide3 .desc { width:435px;  }
+
+.slideshow .slide4 .main_img {   right:20px; }
+
+
+</style>
+<body>
+<div class="header"><h1>piSlideShow 1.1 - Demo 1</h1> Slide your products from all directions.</div>
+<div id="pislideshow" class="slideshow">
+<ul>
+
+	<li>
+
+		<div class="main_img">
+			<img alt="" src="images/pic1.png" width="836" height="589" />
+        </div>
+
+		<div class="desc">
+			<p><h2>All New iPhone 4s. Its the most amazing phone yet!</h2></p><p>
+				The dual-core A5 chip delivers even more power. The 8MP iSight camera with all-new optics also shoots 1080p HD video. And if there's anything else you need, just ask Siri.</p>
+			<img alt="" class="btn" src="images/learnmore_btn.png" style="width: 117px; height: 35px; " />
+		</div>
+
+	</li>
+
+	<li>
+
+		<div class="main_img">
+        	<img alt="" src="images/ipad.jpeg" width="800" height="124"/>
+        </div>
+
+		<div class="desc">
+				<p><h2>All New iPad2. Its brilliant in every sense of the word!</h2></p><p>
+				we made the fundamental elements of iPad better — the display, the camera, the wireless connection. All of which makes the new, third-generation iPad capable of so much more than you ever imagined.</p>
+				<img alt="" class="btn" src="images/learnmore_btn.png" style="width: 117px; height: 35px; " /></div>
+	</li>
+
+	<li>
+
+		<div class="main_img">
+			<img alt="" src="images/mac.jpeg" width="782" height="450"/>
+        </div>
+
+		<div class="desc">
+				<p><h2>MacBook Pro is loaded with powerful new features</h2></p>
+                <p>The 15-inch MacBook Pro features the new 2.3GHz and 2.6GHz quad-core Intel Core i7 processors with 6MB of shared L3 cache and Turbo Boost speeds up to 3.6GHz. And you can configure it to be even faster. </p>
+				<img alt="" class="btn" src="images/learnmore_btn.png" style="width: 117px; height: 35px; " />
+
+		</div>
+
+	</li>
+    
+    <li>
+
+		<div class="main_img">
+			<img alt="" src="images/pic4.jpg" width="506" height="475"/>
+        </div>
+        
+		<div class="desc">
+			<p><h2>Marware C.E.O. Hybrid for iPad 2</h2></p>
+            <p>Ultra-low profile traditional hard shell and padded folio hybrid design. Innovative elastic interior hand strap for improved, comfortable hold- great for FaceTime®  </p>
+            <img alt="" class="btn" src="images/learnmore_btn.png" style="width: 117px; height: 35px; " /></p>
+		</div>
+
+	</li>
+
+</ul>
+
+</div>
+<div class="footer">
+Pictures used in this demo is only for presentation purposes. <br />
+This script was brought to you by <a href="http://piVisions.com">piVisions.com</a>
+</div>
+</body>
+</html>
