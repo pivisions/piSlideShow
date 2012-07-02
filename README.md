@@ -28,6 +28,8 @@ Your HTML may look like this:
       </ul>
     </div>
   ```
+  `#pislideshow` is the main container.  
+  
   Each `li` contains a div with class `.main_img`, this is mandatory. `.main_img` contains your product image which 
   you wish to slide. You may have as many `li`s based on the slides you wants. 
   
@@ -41,12 +43,45 @@ When your Document is ready, call `piSlideShow` on main container of your slides
  
  jQuery(document).ready(function(){
   var options = {
-	'slideDirection' : ['right', 'bottom', 'left', 'top'],
-	'slideTo' : [-200, 0, -70, -50],
+	'slideDirection' : ['right', 'bottom', 'left', 'top']
   }
   $('#pislideshow').pislideshow(options);
 });
  ```
 ### Options Explained
+
+piSlideShow has following options.
+
+* `slideDirection` : **Required** -  Array of Direction (right, bottom, left, top) for each product from where you wish to Slide IN your product. You may specify for each slide or specify just one which will be used for all slide animations.  
+                                  -  Eg.: 'slideDirection' : ['right', 'top'] OR 'slideDirection' : ['right']
+
+* `slideTo` : *optional* - Array of positions (numeric) for each product specifying the end slide position of the product.Must be specified for all slides.  
+                         - Eg.: 'slideTo' : [-10, 0]  
+                         - If nothing is specified, then script will slide-in the product completely inside the main container based on image width.
+
+* `slideFrom` : *optional* - Array of positions (numeric) for each product specifying the start slide position of the product. Must be specified for all slides.  
+                           - Eg.: 'slideFrom' : [-500, -200]  
+                           - If nothing is specified, then script will move the product completely outside the main container based on image width.
+
+* `animDuration` : *optional* - Array of duration for slide animation for each product. Default value is 1000 (1 sec). You may specify for each slide or specify just one which will be used for all slide animations.
+                              - Eg.: 'animDuration' : [1500] OR 'animDuration' : [1500, 500]
+ 
+* `slideDuration` : *optional* - Array of time between two slides. Default value is 5000 (5 secs). You may specify for each slide or specify just one which will be used for all slide animations.  
+                               - Eg.: 'slideDuration' : [8000] OR 'slideDuration' : [8000, 5000]
+ 
+* `slideEasing` : *optional* - Array of easing type for each product. Default value is easeOutBack. You may specify for each slide or specify just one which will be used for all slide animations.  
+                             - Eg.: 'slideEasing' : ['easeOutBack'] OR 'slideDuration' : ['easeOutBack', 'easeOutElastic']
+ 
+* `preloadImgs` : *optional* - `true` or `false`. Defines if images to be preloaded or not. Default is `true`  
+                             - Eg.: 'preloadImgs' : false
+
+* `loader` : **optional** - `true` or `false`. Defines if loaders to be shown or not initally. Default is `true`  
+                          - Eg.: 'loader' : false
+
+* `imagesUrl` : **optional** - Relative or Absolute Path to images folder which contains piSlideShow images. Default is `../images/`  
+                             - Eg.: 'imagesUrl' : 'http://www.examples.com/frontend/images/' OR 'images' : '../images/slideshow/'
+
+* `anchors` : **optional** - `true` or `false`. Defines if anchor balls to be shown or not. Default is `true`  
+                           - Eg.: 'anchors' : false
 
 See demo folder for a sample.
